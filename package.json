@@ -25,7 +25,9 @@
   "scripts": {
     "start": "node index",
     "build": "grunt",
-    "test": "grunt"
+    "test": "grunt",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "async": "^1.4.1",
@@ -35,7 +37,7 @@
     "couchwatch": "^0.6.0",
     "cycle": "^1.0.3",
     "d3": "^3.5.5",
-    "david": "^7.0.0",
+    "david": "^10.0.0",
     "dep-diff": "^1.0.1",
     "express": "^4.12.2",
     "extract": "^1.0.0",
@@ -48,7 +50,7 @@
     "meta-marked": "^0.4.0",
     "mkdirp": "^0.5.1",
     "moment": "^2.9.0",
-    "npm": "^3.3.12",
+    "npm": "^4.4.2",
     "nsp-advisories-api": "^2.0.2",
     "rc": "^1.1.5",
     "request": "^2.53.0",
@@ -56,7 +58,8 @@
     "rimraf": "^2.4.3",
     "rss": "^1.1.1",
     "semver": "^5.0.1",
-    "serve-favicon": "^2.2.0"
+    "serve-favicon": "^2.2.0",
+    "snyk": "^1.85.0"
   },
   "devDependencies": {
     "brfs": "^1.4.0",
@@ -64,7 +67,6 @@
     "grunt-browserify": "^4.0.0",
     "grunt-contrib-clean": "^0.7.0",
     "grunt-cli": "^0.1.13",
-    "grunt-contrib-clean": "^0.7.0",
     "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-cssmin": "^0.14.0",
     "grunt-contrib-jshint": "^0.11.0",
@@ -81,5 +83,6 @@
   },
   "directories": {
     "test": "test"
-  }
+  },
+  "snyk": true
 }
